@@ -1,19 +1,22 @@
 @import "src/constants/variables.scss";
 
 .main {
-  width: 100vw;
-  height: calc(100vh - $header-height);
-  background-color: #ececec;
+  width: 100%;
   display: flex;
-
   .sxColumn {
     width: 500px;
     height: calc(100vh - $header-height);
-    padding: 20px;
+    padding: 10px;
+    @media all and (max-width: 800px) {
+      & {
+        width: 100px;
+      }
+    }
   }
-
   .dxColumn {
     width: 100%;
+    margin-left: 30px;
     height: calc(100vh - $header-height);
+    padding: 10px;
   }
 }
