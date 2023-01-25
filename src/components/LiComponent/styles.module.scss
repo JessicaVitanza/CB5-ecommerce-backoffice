@@ -24,4 +24,21 @@
     .icon {
       font-size: 20px;
     }
+    .label {
+      @media all and (max-width: 800px) {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  .active {
+    color:#5dd4c8;
+    background-color: #333;
+    border-radius: 0px 10px 10px 0;
+    svg path {
+      stroke: #5dd4c8;
+    }
+  
   }
