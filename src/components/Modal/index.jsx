@@ -1,10 +1,11 @@
 import CategoryForm from "../CategoryForm";
 import styles from "./styles.module.scss";
+
 const Modal = ({ setShowModal, data, getData }) => {
   return (
     <div className={styles.cover}>
       <div className={styles.modal}>
-        <button onClick={() => setShowModal(false)}>Chiudi</button>
+        <button onClick={() => setShowModal(false)}>x</button>
         <CategoryForm
           data={data}
           getData={getData}
